@@ -27,12 +27,17 @@ const GallerySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: (i % 8) * 0.05 }}
-              className="card-gallery bg-card group"
+              className="rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 bg-card overflow-hidden flex flex-col"
             >
-              <div className="overflow-hidden aspect-square">
-                <img src={p.image} alt={p.title} className="w-full h-full object-cover img-zoom" loading="lazy" />
+              <div className="bg-muted/30 flex items-center justify-center aspect-[3/4] p-2 overflow-hidden group">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="max-w-full max-h-full object-contain rounded-lg transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
               </div>
-              <div className="p-3 md:p-4">
+              <div className="p-3 md:p-4 flex flex-col flex-1">
                 <h3 className="font-display text-sm md:text-base font-semibold text-foreground truncate">{p.title}</h3>
                 <p className="text-muted-foreground text-xs mt-1 line-clamp-2">{p.description}</p>
                 <div className="flex items-center gap-2 mt-2">
