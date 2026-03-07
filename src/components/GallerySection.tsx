@@ -47,7 +47,7 @@ const GallerySection = () => {
                     View
                   </button>
                   <a
-                    href={`https://wa.me/919999999999?text=I want to buy "${p.title}" for ₹${p.discountPrice}`}
+                    href={`https://wa.me/917708704523?text=Hi, I want to buy "${p.title}" for ₹${p.discountPrice}`}
                     target="_blank"
                     rel="noreferrer"
                     className="btn-glow flex-1 text-xs border border-primary text-primary py-1.5 rounded-md font-body font-medium text-center"
