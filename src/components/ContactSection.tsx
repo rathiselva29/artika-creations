@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const contactLinks = [
-  { icon: 'fa-brands fa-whatsapp', label: 'WhatsApp', href: 'https://wa.me/919999999999', color: 'bg-green-500' },
-  { icon: 'fa-brands fa-instagram', label: 'Instagram', href: 'https://instagram.com/artika.gallery', color: 'bg-pink-500' },
-  { icon: 'fas fa-envelope', label: 'Email', href: 'mailto:artika@gallery.com', color: 'bg-primary' },
-  { icon: 'fas fa-sms', label: 'SMS', href: 'sms:+919999999999', color: 'bg-blue-500' },
+  { icon: 'fa-brands fa-whatsapp', label: 'WhatsApp', href: 'https://wa.me/917708704523?text=Hi, I am interested in your paintings!', color: 'bg-green-500' },
+  { icon: 'fa-brands fa-instagram', label: 'Instagram', href: 'https://instagram.com/rathii__selva', color: 'bg-pink-500' },
+  { icon: 'fas fa-envelope', label: 'Email', href: 'mailto:ratthikas29@gmail.com', color: 'bg-primary' },
+  { icon: 'fas fa-sms', label: 'SMS', href: 'sms:+917708704523?body=Hi, I am interested in your paintings!', color: 'bg-blue-500' },
 ];
 
 const ContactSection = () => {

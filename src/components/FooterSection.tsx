@@ -1,8 +1,8 @@
 const socials = [
-  { icon: 'fa-brands fa-instagram', href: 'https://instagram.com/artika.gallery', label: 'Instagram' },
-  { icon: 'fa-brands fa-whatsapp', href: 'https://wa.me/919999999999', label: 'WhatsApp' },
-  { icon: 'fas fa-envelope', href: 'mailto:artika@gallery.com', label: 'Email' },
-  { icon: 'fas fa-sms', href: 'sms:+919999999999', label: 'SMS' },
+  { icon: 'fa-brands fa-instagram', href: 'https://instagram.com/rathii__selva', label: 'Instagram' },
+  { icon: 'fa-brands fa-whatsapp', href: 'https://wa.me/917708704523', label: 'WhatsApp' },
+  { icon: 'fas fa-envelope', href: 'mailto:ratthikas29@gmail.com', label: 'Email' },
+  { icon: 'fas fa-sms', href: 'sms:+917708704523', label: 'SMS' },
 ];
 
 const FooterSection = () => (

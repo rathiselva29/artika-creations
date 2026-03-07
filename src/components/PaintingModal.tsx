@@ -42,7 +42,7 @@ const PaintingModal = ({ painting, onClose }: Props) => (
             </div>
             <div className="flex gap-3 mt-5">
               <a
-                href={`https://wa.me/919999999999?text=I want to buy "${painting.title}" for ₹${painting.discountPrice}`}
+                href={`https://wa.me/917708704523?text=Hi, I want to buy "${painting.title}" for ₹${painting.discountPrice}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-glow flex-1 bg-primary text-primary-foreground py-3 rounded-lg font-body font-semibold text-sm text-center"
