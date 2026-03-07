@@ -5,8 +5,11 @@ import p4 from '@/assets/paintings/painting-4.jpg';
 import p5 from '@/assets/paintings/painting-5.jpg';
 import p6 from '@/assets/paintings/painting-6.jpg';
 import p7 from '@/assets/paintings/painting-7.jpg';
+import p8 from '@/assets/paintings/painting-8.jpg';
+import p9 from '@/assets/paintings/painting-9.jpg';
+import p10 from '@/assets/paintings/painting-10.jpg';
 
-const images = [p1, p2, p3, p4, p5, p6, p7];
+const images = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10];
 
 export interface Painting {
   id: number;
