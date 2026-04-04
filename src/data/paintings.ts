@@ -18,6 +18,16 @@ import p17 from '@/assets/paintings/painting-17.jpg';
 import p18 from '@/assets/paintings/painting-18.jpg';
 import p19 from '@/assets/paintings/painting-19.jpg';
 import p20 from '@/assets/paintings/painting-20.jpg';
+import p21 from '@/assets/paintings/painting-21.jpg';
+import p22 from '@/assets/paintings/painting-22.jpg';
+import p23 from '@/assets/paintings/painting-23.jpg';
+import p24 from '@/assets/paintings/painting-24.jpg';
+import p25 from '@/assets/paintings/painting-25.jpg';
+import p26 from '@/assets/paintings/painting-26.jpg';
+import p27 from '@/assets/paintings/painting-27.jpg';
+import p28 from '@/assets/paintings/painting-28.jpg';
+import p29 from '@/assets/paintings/painting-29.jpg';
+import p30 from '@/assets/paintings/painting-30.jpg';
 
 export interface Painting {
   id: number;
@@ -49,4 +59,14 @@ export const paintings: Painting[] = [
   { id: 18, title: "Divine Shiva", description: "A powerful portrayal of Lord Shiva in deep meditation.", originalPrice: 599, discountPrice: 259, image: p18 },
   { id: 19, title: "Countryside Bliss", description: "A charming countryside scene with a red barn, flowers, and waterfall.", originalPrice: 529, discountPrice: 219, image: p19 },
   { id: 20, title: "Cherry Blossom Falls", description: "Pink cherry blossoms framing a majestic waterfall in spring.", originalPrice: 539, discountPrice: 229, image: p20 },
+  { id: 21, title: "Emerald Voyage", description: "A lone ship sailing through mystical green waters under a glowing moon.", originalPrice: 469, discountPrice: 199, image: p21 },
+  { id: 22, title: "Fireside Solitude", description: "A cozy evening by the fireplace with warm light and quiet reflection.", originalPrice: 509, discountPrice: 219, image: p22 },
+  { id: 23, title: "Love in Moonlight", description: "Two lovers embraced under a radiant moon surrounded by petals.", originalPrice: 549, discountPrice: 239, image: p23 },
+  { id: 24, title: "Peacock Pair in Bloom", description: "Two graceful peacocks perched on a cherry blossom branch at sunset.", originalPrice: 589, discountPrice: 249, image: p24 },
+  { id: 25, title: "Scarlet Swing", description: "A woman in a flowing red gown on a swing between ancient trees.", originalPrice: 569, discountPrice: 239, image: p25 },
+  { id: 26, title: "Paris in Pink", description: "The Eiffel Tower framed by blooming cherry blossoms at golden hour.", originalPrice: 579, discountPrice: 249, image: p26 },
+  { id: 27, title: "Family of Colors", description: "A loving family silhouette against a vibrant rainbow waterfall.", originalPrice: 559, discountPrice: 229, image: p27 },
+  { id: 28, title: "Twilight Divide", description: "A dramatic split between fiery sunset and starlit night sky.", originalPrice: 539, discountPrice: 229, image: p28 },
+  { id: 29, title: "Cosmic Wonders", description: "Colorful planets floating in a deep purple galaxy of stars.", originalPrice: 599, discountPrice: 259, image: p29 },
+  { id: 30, title: "Stairway of the Mind", description: "A surreal journey of ambition climbing stairs within the human mind.", originalPrice: 619, discountPrice: 269, image: p30 },
 ];
