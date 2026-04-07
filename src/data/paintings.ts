@@ -28,6 +28,13 @@ import p27 from '@/assets/paintings/painting-27.jpg';
 import p28 from '@/assets/paintings/painting-28.jpg';
 import p29 from '@/assets/paintings/painting-29.jpg';
 import p30 from '@/assets/paintings/painting-30.jpg';
+import p31 from '@/assets/paintings/painting-31.jpg';
+import p32 from '@/assets/paintings/painting-32.jpg';
+import p33 from '@/assets/paintings/painting-33.jpg';
+import p34 from '@/assets/paintings/painting-34.jpg';
+import p35 from '@/assets/paintings/painting-35.jpg';
+import p36 from '@/assets/paintings/painting-36.jpg';
+import p37 from '@/assets/paintings/painting-37.jpg';
 
 export interface Painting {
   id: number;
