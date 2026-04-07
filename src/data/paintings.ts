@@ -28,6 +28,13 @@ import p27 from '@/assets/paintings/painting-27.jpg';
 import p28 from '@/assets/paintings/painting-28.jpg';
 import p29 from '@/assets/paintings/painting-29.jpg';
 import p30 from '@/assets/paintings/painting-30.jpg';
+import p31 from '@/assets/paintings/painting-31.jpg';
+import p32 from '@/assets/paintings/painting-32.jpg';
+import p33 from '@/assets/paintings/painting-33.jpg';
+import p34 from '@/assets/paintings/painting-34.jpg';
+import p35 from '@/assets/paintings/painting-35.jpg';
+import p36 from '@/assets/paintings/painting-36.jpg';
+import p37 from '@/assets/paintings/painting-37.jpg';
 
 export interface Painting {
   id: number;
@@ -69,4 +76,11 @@ export const paintings: Painting[] = [
   { id: 28, title: "Twilight Divide", description: "A dramatic split between fiery sunset and starlit night sky.", originalPrice: 539, discountPrice: 229, image: p28 },
   { id: 29, title: "Cosmic Wonders", description: "Colorful planets floating in a deep purple galaxy of stars.", originalPrice: 599, discountPrice: 259, image: p29 },
   { id: 30, title: "Stairway of the Mind", description: "A surreal journey of ambition climbing stairs within the human mind.", originalPrice: 619, discountPrice: 269, image: p30 },
+  { id: 31, title: "Waterfall Koi Pond", description: "Golden koi swimming in a cascading waterfall surrounded by lush greenery.", originalPrice: 549, discountPrice: 229, image: p31 },
+  { id: 32, title: "Aerial Acrobats", description: "Two silhouette figures performing a graceful aerial dance in bold purple.", originalPrice: 399, discountPrice: 169, image: p32 },
+  { id: 33, title: "Midnight Lily Pads", description: "Luminous green lily pads floating on a dark, tranquil water surface.", originalPrice: 459, discountPrice: 189, image: p33 },
+  { id: 34, title: "Star Portrait", description: "A striking watercolor portrait capturing charisma and quiet confidence.", originalPrice: 699, discountPrice: 299, image: p34 },
+  { id: 35, title: "Dancing Koi Duo", description: "Two colorful koi fish gliding through vivid blue waters.", originalPrice: 419, discountPrice: 179, image: p35 },
+  { id: 36, title: "Bokeh Heart Book", description: "A heart formed from book pages against a dreamy bokeh-lit background.", originalPrice: 439, discountPrice: 189, image: p36 },
+  { id: 37, title: "Radha Krishna Divine", description: "A beautiful depiction of Radha and Krishna adorned with peacock feathers and flowers.", originalPrice: 649, discountPrice: 279, image: p37 },
 ];
