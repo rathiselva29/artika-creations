@@ -35,6 +35,13 @@ import p34 from '@/assets/paintings/painting-34.jpg';
 import p35 from '@/assets/paintings/painting-35.jpg';
 import p36 from '@/assets/paintings/painting-36.jpg';
 import p37 from '@/assets/paintings/painting-37.jpg';
+import p38 from '@/assets/paintings/painting-38.jpg';
+import p39 from '@/assets/paintings/painting-39.jpg';
+import p40 from '@/assets/paintings/painting-40.jpg';
+import p41 from '@/assets/paintings/painting-41.jpg';
+import p42 from '@/assets/paintings/painting-42.jpg';
+import p43 from '@/assets/paintings/painting-43.jpg';
+import p44 from '@/assets/paintings/painting-44.jpg';
 
 export interface Painting {
   id: number;
@@ -83,4 +90,11 @@ export const paintings: Painting[] = [
   { id: 35, title: "Dancing Koi Duo", description: "Two colorful koi fish gliding through vivid blue waters.", originalPrice: 419, discountPrice: 179, image: p35 },
   { id: 36, title: "Bokeh Heart Book", description: "A heart formed from book pages against a dreamy bokeh-lit background.", originalPrice: 439, discountPrice: 189, image: p36 },
   { id: 37, title: "Radha Krishna Divine", description: "A beautiful depiction of Radha and Krishna adorned with peacock feathers and flowers.", originalPrice: 649, discountPrice: 279, image: p37 },
+  { id: 38, title: "Little Light Fury", description: "An adorable white dragon hatchling with sparkling blue eyes and floating hearts.", originalPrice: 449, discountPrice: 189, image: p38 },
+  { id: 39, title: "Hiccup & Toothless Bond", description: "A heartfelt moment between rider and night fury glowing in golden light.", originalPrice: 599, discountPrice: 249, image: p39 },
+  { id: 40, title: "Curious Night Fury", description: "A playful baby Toothless peeking out with bright green eyes and a tiny heart.", originalPrice: 469, discountPrice: 199, image: p40 },
+  { id: 41, title: "Blushing Sweethearts", description: "A charming couple portrait full of warmth, soft blushes and tender love.", originalPrice: 519, discountPrice: 219, image: p41 },
+  { id: 42, title: "Judy & Nick Duo", description: "The iconic Zootopia partners painted with bold colors and lively expression.", originalPrice: 559, discountPrice: 229, image: p42 },
+  { id: 43, title: "Forever Yours", description: "An elegant tuxedo and red-dress couple capturing a timeless romantic mood.", originalPrice: 579, discountPrice: 239, image: p43 },
+  { id: 44, title: "Cosmic Black Cat", description: "A mystical galaxy cat soaring through a starry night — signed Artika original.", originalPrice: 629, discountPrice: 269, image: p44 },
 ];
