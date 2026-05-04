@@ -1,10 +1,20 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { paintings, type Painting } from '@/data/paintings';
+import { paintings, categories, type Painting, type Category } from '@/data/paintings';
 import PaintingModal from './PaintingModal';
+
+type Filter = 'All' | Category;
 
 const GallerySection = () => {
   const [selected, setSelected] = useState<Painting | null>(null);
+  const [filter, setFilter] = useState<Filter>('All');
+
+  const filtered = useMemo(
+    () => (filter === 'All' ? paintings : paintings.filter(p => p.category === filter)),
+    [filter]
+  );
+
+  const filters: Filter[] = ['All', ...categories];
 
   return (
     <section id="gallery" className="py-20 bg-background">
@@ -13,14 +23,30 @@ const GallerySection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="text-center mb-8"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-3">Painting Collections</h2>
           <p className="text-muted-foreground font-body max-w-md mx-auto">Each piece is a handcrafted journey through color and emotion.</p>
         </motion.div>
 
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-10">
+          {filters.map(f => (
+            <button
+              key={f}
+              onClick={() => setFilter(f)}
+              className={`px-4 py-1.5 rounded-full text-xs md:text-sm font-body font-medium transition-all duration-300 border ${
+                filter === f
+                  ? 'bg-primary text-primary-foreground border-primary shadow-md'
+                  : 'bg-card text-foreground border-border hover:border-primary hover:text-primary'
+              }`}
+            >
+              {f}
+            </button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {paintings.map((p, i) => (
+          {filtered.map((p, i) => (
             <motion.div
               key={p.id}
               initial={{ opacity: 0, y: 20 }}
