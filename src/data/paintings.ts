@@ -43,9 +43,9 @@ import p42 from '@/assets/paintings/painting-42.jpg';
 import p43 from '@/assets/paintings/painting-43.jpg';
 import p44 from '@/assets/paintings/painting-44.jpg';
 
-export type Category = 'Nature' | 'Portrait' | 'Comic' | 'Poster' | 'Unique' | 'Divine';
+export type Category = 'Nature' | 'Comic' | 'Portrait' | 'Poster' | 'Unique';
 
-export const categories: Category[] = ['Nature', 'Portrait', 'Comic', 'Poster', 'Unique', 'Divine'];
+export const categories: Category[] = ['Nature', 'Comic', 'Portrait', 'Poster', 'Unique'];
 
 export interface Painting {
   id: number;
@@ -61,7 +61,7 @@ export const paintings: Painting[] = [
   { id: 1, title: "Golden Sunset Waves", description: "Soft sunset colors blending emotion and imagination.", originalPrice: 499, discountPrice: 199, image: p1, category: 'Nature' },
   { id: 2, title: "Pink Peony Dreams", description: "Delicate petals captured in gentle brush strokes.", originalPrice: 449, discountPrice: 179, image: p2, category: 'Nature' },
   { id: 3, title: "Misty Mountain Lake", description: "Serene waters reflecting nature's quiet beauty.", originalPrice: 479, discountPrice: 189, image: p3, category: 'Nature' },
-  { id: 4, title: "Colorful Soul Portrait", description: "Bold colors revealing the depth of human expression.", originalPrice: 529, discountPrice: 219, image: p4, category: 'Portrait' },
+  { id: 4, title: "Colorful Soul Portrait", description: "Bold colors revealing the depth of human expression.", originalPrice: 529, discountPrice: 219, image: p4, category: 'Unique' },
   { id: 5, title: "Royal Peacock", description: "Majestic beauty painted with intricate detail.", originalPrice: 459, discountPrice: 199, image: p5, category: 'Nature' },
   { id: 6, title: "Coastal Breakers", description: "The raw power of ocean meets golden light.", originalPrice: 489, discountPrice: 209, image: p6, category: 'Nature' },
   { id: 7, title: "Aurora Night Forest", description: "A magical sky dancing above silent forests.", originalPrice: 469, discountPrice: 189, image: p7, category: 'Nature' },
@@ -75,8 +75,8 @@ export const paintings: Painting[] = [
   { id: 15, title: "Together at Dusk", description: "Two souls sharing a beautiful sunset by the riverside.", originalPrice: 489, discountPrice: 199, image: p15, category: 'Poster' },
   { id: 16, title: "Day and Night Tree", description: "A striking contrast of warm sunset and cool twilight in one frame.", originalPrice: 559, discountPrice: 239, image: p16, category: 'Unique' },
   { id: 17, title: "Purple Waterfall Paradise", description: "A dreamy purple landscape with cascading waterfalls and lush flora.", originalPrice: 579, discountPrice: 249, image: p17, category: 'Nature' },
-  { id: 18, title: "Divine Shiva", description: "A powerful portrayal of Lord Shiva in deep meditation.", originalPrice: 599, discountPrice: 259, image: p18, category: 'Divine' },
-  { id: 19, title: "Countryside Bliss", description: "A charming countryside scene with a red barn, flowers, and waterfall.", originalPrice: 529, discountPrice: 219, image: p19, category: 'Nature' },
+  { id: 18, title: "Divine Shiva", description: "A powerful portrayal of Lord Shiva in deep meditation.", originalPrice: 599, discountPrice: 259, image: p18, category: 'Portrait' },
+  { id: 19, title: "Countryside Bliss", description: "A charming countryside scene with a red barn, flowers, and waterfall.", originalPrice: 529, discountPrice: 219, image: p19, category: 'Unique' },
   { id: 20, title: "Cherry Blossom Falls", description: "Pink cherry blossoms framing a majestic waterfall in spring.", originalPrice: 539, discountPrice: 229, image: p20, category: 'Nature' },
   { id: 21, title: "Emerald Voyage", description: "A lone ship sailing through mystical green waters under a glowing moon.", originalPrice: 469, discountPrice: 199, image: p21, category: 'Unique' },
   { id: 22, title: "Fireside Solitude", description: "A cozy evening by the fireplace with warm light and quiet reflection.", originalPrice: 509, discountPrice: 219, image: p22, category: 'Poster' },
@@ -92,9 +92,9 @@ export const paintings: Painting[] = [
   { id: 32, title: "Aerial Acrobats", description: "Two silhouette figures performing a graceful aerial dance in bold purple.", originalPrice: 399, discountPrice: 169, image: p32, category: 'Unique' },
   { id: 33, title: "Midnight Lily Pads", description: "Luminous green lily pads floating on a dark, tranquil water surface.", originalPrice: 459, discountPrice: 189, image: p33, category: 'Nature' },
   { id: 34, title: "Star Portrait", description: "A striking watercolor portrait capturing charisma and quiet confidence.", originalPrice: 699, discountPrice: 299, image: p34, category: 'Portrait' },
-  { id: 35, title: "Dancing Koi Duo", description: "Two colorful koi fish gliding through vivid blue waters.", originalPrice: 419, discountPrice: 179, image: p35, category: 'Nature' },
+  { id: 35, title: "Dancing Koi Duo", description: "Two colorful koi fish gliding through vivid blue waters.", originalPrice: 419, discountPrice: 179, image: p35, category: 'Comic' },
   { id: 36, title: "Bokeh Heart Book", description: "A heart formed from book pages against a dreamy bokeh-lit background.", originalPrice: 439, discountPrice: 189, image: p36, category: 'Unique' },
-  { id: 37, title: "Radha Krishna Divine", description: "A beautiful depiction of Radha and Krishna adorned with peacock feathers and flowers.", originalPrice: 649, discountPrice: 279, image: p37, category: 'Divine' },
+  { id: 37, title: "Radha Krishna Divine", description: "A beautiful depiction of Radha and Krishna adorned with peacock feathers and flowers.", originalPrice: 649, discountPrice: 279, image: p37, category: 'Portrait' },
   { id: 38, title: "Little Light Fury", description: "An adorable white dragon hatchling with sparkling blue eyes and floating hearts.", originalPrice: 449, discountPrice: 189, image: p38, category: 'Comic' },
   { id: 39, title: "Hiccup & Toothless Bond", description: "A heartfelt moment between rider and night fury glowing in golden light.", originalPrice: 599, discountPrice: 249, image: p39, category: 'Comic' },
   { id: 40, title: "Curious Night Fury", description: "A playful baby Toothless peeking out with bright green eyes and a tiny heart.", originalPrice: 469, discountPrice: 199, image: p40, category: 'Comic' },
