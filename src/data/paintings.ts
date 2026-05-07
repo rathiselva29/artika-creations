@@ -113,7 +113,7 @@ export const autoCategory = (title: string, description: string, fallback: Categ
 };
 
 
-export const paintings: Painting[] = [
+const rawPaintings: (Omit<Painting, 'category'> & { category: Category })[] = [
   { id: 1, title: "Golden Sunset Waves", description: "Soft sunset colors blending emotion and imagination.", originalPrice: 499, discountPrice: 199, image: p1, category: 'Nature' },
   { id: 2, title: "Pink Peony Dreams", description: "Delicate petals captured in gentle brush strokes.", originalPrice: 449, discountPrice: 179, image: p2, category: 'Nature' },
   { id: 3, title: "Misty Mountain Lake", description: "Serene waters reflecting nature's quiet beauty.", originalPrice: 479, discountPrice: 189, image: p3, category: 'Nature' },
