@@ -159,3 +159,9 @@ const rawPaintings: (Omit<Painting, 'category'> & { category: Category })[] = [
   { id: 43, title: "Forever Yours", description: "An elegant tuxedo and red-dress couple capturing a timeless romantic mood.", originalPrice: 579, discountPrice: 239, image: p43, category: 'Portrait' },
   { id: 44, title: "Cosmic Black Cat", description: "A mystical galaxy cat soaring through a starry night — signed Artika original.", originalPrice: 629, discountPrice: 269, image: p44, category: 'Unique' },
 ];
+
+// Auto-tag every painting using keyword detection; manual category serves as fallback.
+export const paintings: Painting[] = rawPaintings.map(p => ({
+  ...p,
+  category: autoCategory(p.title, p.description, p.category),
+}));
