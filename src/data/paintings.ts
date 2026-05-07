@@ -43,9 +43,9 @@ import p42 from '@/assets/paintings/painting-42.jpg';
 import p43 from '@/assets/paintings/painting-43.jpg';
 import p44 from '@/assets/paintings/painting-44.jpg';
 
-export type Category = 'Nature' | 'Portrait' | 'Comic' | 'Poster' | 'Unique' | 'Divine';
+export type Category = 'Nature' | 'Comic' | 'Portrait' | 'Poster' | 'Unique' | 'Divine';
 
-export const categories: Category[] = ['Nature', 'Portrait', 'Comic', 'Poster', 'Unique', 'Divine'];
+export const categories: Category[] = ['Nature', 'Comic', 'Portrait', 'Poster', 'Unique', 'Divine'];
 
 export interface Painting {
   id: number;
