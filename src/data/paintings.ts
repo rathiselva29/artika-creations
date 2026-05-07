@@ -61,7 +61,7 @@ export const paintings: Painting[] = [
   { id: 1, title: "Golden Sunset Waves", description: "Soft sunset colors blending emotion and imagination.", originalPrice: 499, discountPrice: 199, image: p1, category: 'Nature' },
   { id: 2, title: "Pink Peony Dreams", description: "Delicate petals captured in gentle brush strokes.", originalPrice: 449, discountPrice: 179, image: p2, category: 'Nature' },
   { id: 3, title: "Misty Mountain Lake", description: "Serene waters reflecting nature's quiet beauty.", originalPrice: 479, discountPrice: 189, image: p3, category: 'Nature' },
-  { id: 4, title: "Colorful Soul Portrait", description: "Bold colors revealing the depth of human expression.", originalPrice: 529, discountPrice: 219, image: p4, category: 'Portrait' },
+  { id: 4, title: "Colorful Soul Portrait", description: "Bold colors revealing the depth of human expression.", originalPrice: 529, discountPrice: 219, image: p4, category: 'Poster' },
   { id: 5, title: "Royal Peacock", description: "Majestic beauty painted with intricate detail.", originalPrice: 459, discountPrice: 199, image: p5, category: 'Nature' },
   { id: 6, title: "Coastal Breakers", description: "The raw power of ocean meets golden light.", originalPrice: 489, discountPrice: 209, image: p6, category: 'Nature' },
   { id: 7, title: "Aurora Night Forest", description: "A magical sky dancing above silent forests.", originalPrice: 469, discountPrice: 189, image: p7, category: 'Nature' },
