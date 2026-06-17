@@ -69,10 +69,15 @@ const PersonalizeOrderSection = () => {
         photo_url = path;
       }
 
-      const { error } = await supabase.from('orders').insert({
-        ...parsed.data,
+      const { error } = await supabase.from('orders').insert([{
+        customer_name: parsed.data.customer_name,
+        contact: parsed.data.contact,
+        product_type: parsed.data.product_type,
+        size: parsed.data.size,
+        frame_style: parsed.data.frame_style,
+        description: parsed.data.description,
         photo_url,
-      });
+      }]);
       if (error) throw error;
 
       toast({ title: 'Order request sent!', description: 'Artika will reach out to you shortly.' });
