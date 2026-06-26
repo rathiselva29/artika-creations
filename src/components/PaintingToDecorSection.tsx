@@ -1,23 +1,53 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { paintings } from '@/data/paintings';
+import pixelStickers from '@/assets/decor-pixel-stickers.jpg';
+import photoCollage from '@/assets/decor-photo-collage.jpg';
+import framedLiving from '@/assets/decor-framed-livingroom.jpg';
+import wallSticker from '@/assets/decor-wall-sticker.jpg';
+import postcard from '@/assets/decor-postcard.jpg';
 
 const variants = [
-  { icon: '🎨', label: 'Original Painting', style: 'rounded-md ring-1 ring-border' },
-  { icon: '🖼️', label: 'Framed Art', style: 'rounded-sm ring-[10px] ring-amber-900/80 shadow-2xl' },
-  { icon: '✨', label: 'Wall Sticker', style: 'rounded-[40%] shadow-lg' },
-  { icon: '📮', label: 'Postcard', style: 'rounded-md shadow-md rotate-2 ring-4 ring-background' },
-  { icon: '🎁', label: 'Gift Print', style: 'rounded-2xl shadow-xl ring-2 ring-primary/40' },
+  {
+    icon: '🖼️',
+    label: 'Framed Canvas',
+    location: 'Above the living room sofa',
+    image: framedLiving,
+  },
+  {
+    icon: '🟦',
+    label: 'Pixel Sticker Wall',
+    location: 'Cozy reading nook',
+    image: pixelStickers,
+  },
+  {
+    icon: '💜',
+    label: 'Photo Collage Heart',
+    location: 'Bedroom corner wall',
+    image: photoCollage,
+  },
+  {
+    icon: '✨',
+    label: 'Wall Decal Mural',
+    location: 'Kids room / study desk',
+    image: wallSticker,
+  },
+  {
+    icon: '📮',
+    label: 'Art Postcard Set',
+    location: 'Desk & gifting flat-lay',
+    image: postcard,
+  },
 ];
 
 const PaintingToDecorSection = () => {
   const [idx, setIdx] = useState(0);
-  const featured = paintings[2] || paintings[0];
 
   useEffect(() => {
-    const t = setInterval(() => setIdx(i => (i + 1) % variants.length), 2500);
+    const t = setInterval(() => setIdx(i => (i + 1) % variants.length), 3500);
     return () => clearInterval(t);
   }, []);
+
+  const current = variants[idx];
 
   return (
     <section id="painting-to-decor" className="py-20 bg-background">
@@ -29,21 +59,25 @@ const PaintingToDecorSection = () => {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-3">From Painting To Decor</h2>
-          <p className="text-muted-foreground font-body max-w-md mx-auto">One artwork, transformed into the format that fits your space.</p>
+          <p className="text-muted-foreground font-body max-w-md mx-auto">One artwork, reimagined into the format that fits your space.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
-          <div className="relative aspect-square max-w-sm mx-auto w-full">
+          <div className="relative aspect-square max-w-md mx-auto w-full rounded-2xl overflow-hidden ring-1 ring-border shadow-xl">
             <AnimatePresence mode="wait">
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, scale: 0.85, rotate: -8, filter: 'blur(8px)' }}
-                animate={{ opacity: 1, scale: 1, rotate: 0, filter: 'blur(0px)' }}
-                exit={{ opacity: 0, scale: 1.1, rotate: 8, filter: 'blur(8px)' }}
-                transition={{ duration: 0.8, ease: 'easeInOut' }}
-                className={`absolute inset-0 overflow-hidden ${variants[idx].style}`}
+                initial={{ opacity: 0, scale: 1.05, filter: 'blur(8px)' }}
+                animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+                exit={{ opacity: 0, scale: 0.95, filter: 'blur(8px)' }}
+                transition={{ duration: 0.7, ease: 'easeInOut' }}
+                className="absolute inset-0"
               >
-                <img src={featured.image} alt={featured.title} className="w-full h-full object-cover" loading="lazy" />
+                <img src={current.image} alt={current.label} className="w-full h-full object-cover" loading="lazy" width={1024} height={1024} />
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <div className="text-white font-display font-semibold">{current.label}</div>
+                  <div className="text-white/80 text-xs font-body">{current.location}</div>
+                </div>
               </motion.div>
             </AnimatePresence>
           </div>
@@ -62,9 +96,7 @@ const PaintingToDecorSection = () => {
                 <div className="text-3xl">{v.icon}</div>
                 <div className="flex-1">
                   <div className="font-display font-semibold text-foreground">{v.label}</div>
-                  <div className="text-xs text-muted-foreground font-body">
-                    {idx === i ? 'Now showing' : 'Tap to morph'}
-                  </div>
+                  <div className="text-xs text-muted-foreground font-body">{v.location}</div>
                 </div>
                 {idx === i && <motion.i layoutId="dot" className="fas fa-circle text-primary text-[8px]" />}
               </button>
