@@ -1,41 +1,41 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import pixelStickers from '@/assets/decor-pixel-stickers.jpg';
-import photoCollage from '@/assets/decor-photo-collage.jpg';
-import framedLiving from '@/assets/decor-framed-livingroom.jpg';
-import wallSticker from '@/assets/decor-wall-sticker.jpg';
-import postcard from '@/assets/decor-postcard.jpg';
+import framedArt from '@/assets/paintings/painting-11.jpg';
+import pixelArt from '@/assets/paintings/painting-36.jpg';
+import collageArt from '@/assets/paintings/painting-23.jpg';
+import stickerArt from '@/assets/paintings/painting-38.jpg';
+import postcardArt from '@/assets/paintings/painting-49.jpg';
 
 const variants = [
   {
     icon: '🖼️',
     label: 'Framed Canvas',
-    location: 'Above the living room sofa',
-    image: framedLiving,
+    location: 'Above the living room sofa — Moonlit Mountain Mirror',
+    image: framedArt,
   },
   {
     icon: '🟦',
     label: 'Pixel Sticker Wall',
-    location: 'Cozy reading nook',
-    image: pixelStickers,
+    location: 'Cozy reading nook — Heart in the Open Book',
+    image: pixelArt,
   },
   {
     icon: '💜',
     label: 'Photo Collage Heart',
-    location: 'Bedroom corner wall',
-    image: photoCollage,
+    location: 'Bedroom corner wall — Lovers Inside the Heart',
+    image: collageArt,
   },
   {
     icon: '✨',
     label: 'Wall Decal Mural',
-    location: 'Kids room / study desk',
-    image: wallSticker,
+    location: 'Kids room / study desk — Baby Light Fury',
+    image: stickerArt,
   },
   {
     icon: '📮',
     label: 'Art Postcard Set',
-    location: 'Desk & gifting flat-lay',
-    image: postcard,
+    location: 'Desk & gifting flat-lay — Cutting Chai Comfort',
+    image: postcardArt,
   },
 ];
 
