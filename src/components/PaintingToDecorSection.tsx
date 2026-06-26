@@ -3,8 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import framedArt from '@/assets/paintings/painting-11.jpg';
 import pixelArt from '@/assets/paintings/painting-36.jpg';
 import collageArt from '@/assets/paintings/painting-23.jpg';
-import stickerArt from '@/assets/paintings/painting-38.jpg';
 import postcardArt from '@/assets/paintings/painting-49.jpg';
+import comic1 from '@/assets/paintings/painting-1.jpg';
+import comic2 from '@/assets/paintings/painting-35.jpg';
+import comic3 from '@/assets/paintings/painting-38.jpg';
+import comic4 from '@/assets/paintings/painting-39.jpg';
+import comic5 from '@/assets/paintings/painting-40.jpg';
+import comic6 from '@/assets/paintings/painting-42.jpg';
 
 const variants = [
   {
@@ -28,8 +33,8 @@ const variants = [
   {
     icon: '✨',
     label: 'Wall Decal Mural',
-    location: 'Kids room / study desk — Baby Light Fury',
-    image: stickerArt,
+    location: 'Kids room / study desk — Comic Collection Wall',
+    images: [comic1, comic2, comic3, comic4, comic5, comic6],
   },
   {
     icon: '📮',
@@ -37,7 +42,7 @@ const variants = [
     location: 'Desk & gifting flat-lay — Cutting Chai Comfort',
     image: postcardArt,
   },
-];
+] as const;
 
 const PaintingToDecorSection = () => {
   const [idx, setIdx] = useState(0);
