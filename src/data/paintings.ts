@@ -49,6 +49,12 @@ import p48 from '@/assets/paintings/painting-48.jpg';
 import p49 from '@/assets/paintings/painting-49.jpg';
 import p50 from '@/assets/paintings/painting-50.jpg';
 import p51 from '@/assets/paintings/painting-51.jpg';
+import p52Asset from '@/assets/paintings/painting-52.jpg.asset.json';
+import p53Asset from '@/assets/paintings/painting-53.jpg.asset.json';
+import p54Asset from '@/assets/paintings/painting-54.jpg.asset.json';
+const p52 = p52Asset.url;
+const p53 = p53Asset.url;
+const p54 = p54Asset.url;
 
 export type Category = 'Nature' | 'Comic' | 'Portrait' | 'Poster' | 'Unique';
 
@@ -79,6 +85,7 @@ export const paintings: Painting[] = [
   { id: 33, title: "Midnight Lily Pads", description: "Glowing green lily pads float on dark rippling water under a quiet moonless sky.", originalPrice: 249, discountPrice: 99, image: p33, category: 'Nature' },
   { id: 46, title: "Rainy Night Garden Glow", description: "A warm glowing lantern and lit window beside red flowers in a heavy night rain.", originalPrice: 309, discountPrice: 129, image: p46, category: 'Nature' },
   { id: 51, title: "Lavender Fields at Dusk", description: "Endless rows of purple lavender stretch toward a cottage under a moonlit sky.", originalPrice: 329, discountPrice: 139, image: p51, category: 'Nature' },
+  { id: 54, title: "Sunrays Over the Meadow", description: "Golden sunbeams break through stormy clouds onto a lush green countryside path.", originalPrice: 279, discountPrice: 109, image: p54, category: 'Nature' },
 
   // ============ COMIC ============
   { id: 1, title: "Best Friends Forever", description: "Two cute baby monkeys hugging tight with a floating pink heart — pure friendship.", originalPrice: 229, discountPrice: 89, image: p1, category: 'Comic' },
@@ -109,6 +116,7 @@ export const paintings: Painting[] = [
   { id: 26, title: "Paris in Cherry Bloom", description: "The Eiffel Tower stands tall, framed by soft pink cherry blossoms at golden hour.", originalPrice: 319, discountPrice: 139, image: p26, category: 'Poster' },
   { id: 27, title: "Family Beneath the Rainbow", description: "A loving family silhouette glows against a vibrant rainbow waterfall of colors.", originalPrice: 309, discountPrice: 129, image: p27, category: 'Poster' },
   { id: 50, title: "Need for Speed", description: "A bold BMW painted in moody watercolor with neon lights and a 'Need for Speed' tag.", originalPrice: 309, discountPrice: 129, image: p50, category: 'Poster' },
+  { id: 53, title: "RCB — Play Bold", description: "A bold hand-painted tribute to Royal Challengers Bangalore with the iconic lion crest.", originalPrice: 289, discountPrice: 119, image: p53, category: 'Poster' },
 
   // ============ UNIQUE ============
   { id: 2, title: "Crimson Tree Under the Moon", description: "A glowing red tree on a tiny island lit by a full moon and a quiet little boat.", originalPrice: 309, discountPrice: 129, image: p2, category: 'Unique' },
@@ -123,6 +131,7 @@ export const paintings: Painting[] = [
   { id: 36, title: "Heart in the Open Book", description: "A glowing heart resting on the pages of an open book under magical bokeh lights.", originalPrice: 239, discountPrice: 99, image: p36, category: 'Unique' },
   { id: 44, title: "Galaxy Cat — Artika Signature", description: "A mystical black cat soars through a starry galaxy — a signed Artika original.", originalPrice: 349, discountPrice: 149, image: p44, category: 'Unique' },
   { id: 45, title: "Bloom in the Blue Whirl", description: "A white blossom and a quiet silhouette swirl together in a deep blue dreamscape.", originalPrice: 269, discountPrice: 109, image: p45, category: 'Unique' },
+  { id: 52, title: "Dragon of the Stormcastle", description: "A fierce dragon breathes fire across a moonlit castle wrapped in lightning and mist.", originalPrice: 349, discountPrice: 149, image: p52, category: 'Unique' },
   { id: 48, title: "Voyage of the Pirate Ship", description: "A grand pirate ship sails through wild stormy seas under a moody dramatic sky.", originalPrice: 339, discountPrice: 149, image: p48, category: 'Unique' },
   { id: 49, title: "Cutting Chai Comfort", description: "A steaming glass of hot Indian chai painted with cozy detail on lined paper.", originalPrice: 209, discountPrice: 89, image: p49, category: 'Unique' },
 ];
