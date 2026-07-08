@@ -49,6 +49,12 @@ import p48 from '@/assets/paintings/painting-48.jpg';
 import p49 from '@/assets/paintings/painting-49.jpg';
 import p50 from '@/assets/paintings/painting-50.jpg';
 import p51 from '@/assets/paintings/painting-51.jpg';
+import p52Asset from '@/assets/paintings/painting-52.jpg.asset.json';
+import p53Asset from '@/assets/paintings/painting-53.jpg.asset.json';
+import p54Asset from '@/assets/paintings/painting-54.jpg.asset.json';
+const p52 = p52Asset.url;
+const p53 = p53Asset.url;
+const p54 = p54Asset.url;
 
 export type Category = 'Nature' | 'Comic' | 'Portrait' | 'Poster' | 'Unique';
 
