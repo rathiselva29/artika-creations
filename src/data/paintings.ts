@@ -131,6 +131,7 @@ export const paintings: Painting[] = [
   { id: 36, title: "Heart in the Open Book", description: "A glowing heart resting on the pages of an open book under magical bokeh lights.", originalPrice: 239, discountPrice: 99, image: p36, category: 'Unique' },
   { id: 44, title: "Galaxy Cat — Artika Signature", description: "A mystical black cat soars through a starry galaxy — a signed Artika original.", originalPrice: 349, discountPrice: 149, image: p44, category: 'Unique' },
   { id: 45, title: "Bloom in the Blue Whirl", description: "A white blossom and a quiet silhouette swirl together in a deep blue dreamscape.", originalPrice: 269, discountPrice: 109, image: p45, category: 'Unique' },
+  { id: 52, title: "Dragon of the Stormcastle", description: "A fierce dragon breathes fire across a moonlit castle wrapped in lightning and mist.", originalPrice: 349, discountPrice: 149, image: p52, category: 'Unique' },
   { id: 48, title: "Voyage of the Pirate Ship", description: "A grand pirate ship sails through wild stormy seas under a moody dramatic sky.", originalPrice: 339, discountPrice: 149, image: p48, category: 'Unique' },
   { id: 49, title: "Cutting Chai Comfort", description: "A steaming glass of hot Indian chai painted with cozy detail on lined paper.", originalPrice: 209, discountPrice: 89, image: p49, category: 'Unique' },
 ];
