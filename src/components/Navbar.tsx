@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -12,16 +15,33 @@ const Navbar = () => {
   }, []);
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     setIsOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 100);
+      return;
+    }
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const goTo = (path: string) => {
+    setIsOpen(false);
+    navigate(path);
+    window.scrollTo({ top: 0 });
   };
 
   const links = [
     { label: 'Home', id: 'home' },
-    { label: 'Services', id: 'services' },
     { label: 'Collections', id: 'gallery' },
     { label: 'Contact', id: 'contact' },
   ];
+
+  const pageLinks = [
+    { label: 'Services', path: '/services' },
+    { label: 'Pricing', path: '/pricing' },
+    { label: 'Custom Orders', path: '/custom-orders' },
+  ];
+
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-background/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
@@ -34,6 +54,11 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
           {links.map(l => (
             <button key={l.id} onClick={() => scrollTo(l.id)} className="nav-link-artika text-foreground/80 hover:text-primary font-body text-sm uppercase tracking-widest">
+              {l.label}
+            </button>
+          ))}
+          {pageLinks.map(l => (
+            <button key={l.path} onClick={() => goTo(l.path)} className="nav-link-artika text-foreground/80 hover:text-primary font-body text-sm uppercase tracking-widest">
               {l.label}
             </button>
           ))}
@@ -59,6 +84,11 @@ const Navbar = () => {
             <div className="flex flex-col items-center py-6 gap-4">
               {links.map(l => (
                 <button key={l.id} onClick={() => scrollTo(l.id)} className="text-foreground/80 hover:text-primary font-body text-lg uppercase tracking-widest transition-colors">
+                  {l.label}
+                </button>
+              ))}
+              {pageLinks.map(l => (
+                <button key={l.path} onClick={() => goTo(l.path)} className="text-foreground/80 hover:text-primary font-body text-lg uppercase tracking-widest transition-colors">
                   {l.label}
                 </button>
               ))}

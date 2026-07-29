@@ -7,6 +7,10 @@ import PersonalizeOrderSection from '@/components/PersonalizeOrderSection';
 import RealSpacesSection from '@/components/RealSpacesSection';
 import StickerCollectionSection from '@/components/StickerCollectionSection';
 import PaintingToDecorSection from '@/components/PaintingToDecorSection';
+import FrameOptionsSection from '@/components/FrameOptionsSection';
+import ShopCategoriesSection from '@/components/ShopCategoriesSection';
+import SizeGuideSection from '@/components/SizeGuideSection';
+import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import ContactSection from '@/components/ContactSection';
 import FooterSection from '@/components/FooterSection';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
@@ -22,7 +26,12 @@ const Index = () => (
     <RealSpacesSection />
     <StickerCollectionSection />
     <PaintingToDecorSection />
+    <FrameOptionsSection />
+    <ShopCategoriesSection />
+    <SizeGuideSection />
+    <WhyChooseUsSection />
     <ContactSection />
+
     <FooterSection />
     <ThemeSwitcher />
   </div>
