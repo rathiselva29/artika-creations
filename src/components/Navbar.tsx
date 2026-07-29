@@ -57,6 +57,11 @@ const Navbar = () => {
               {l.label}
             </button>
           ))}
+          {pageLinks.map(l => (
+            <button key={l.path} onClick={() => goTo(l.path)} className="nav-link-artika text-foreground/80 hover:text-primary font-body text-sm uppercase tracking-widest">
+              {l.label}
+            </button>
+          ))}
         </div>
 
         {/* Hamburger */}
@@ -79,6 +84,11 @@ const Navbar = () => {
             <div className="flex flex-col items-center py-6 gap-4">
               {links.map(l => (
                 <button key={l.id} onClick={() => scrollTo(l.id)} className="text-foreground/80 hover:text-primary font-body text-lg uppercase tracking-widest transition-colors">
+                  {l.label}
+                </button>
+              ))}
+              {pageLinks.map(l => (
+                <button key={l.path} onClick={() => goTo(l.path)} className="text-foreground/80 hover:text-primary font-body text-lg uppercase tracking-widest transition-colors">
                   {l.label}
                 </button>
               ))}
