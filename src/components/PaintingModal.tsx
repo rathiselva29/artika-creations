@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import type { Painting } from '@/data/paintings';
+import { serviceOptionsFor } from '@/data/paintingServices';
 
 interface Props {
   painting: Painting | null;
@@ -22,7 +23,7 @@ const PaintingModal = ({ painting, onClose }: Props) => (
           exit={{ scale: 0.85, opacity: 0 }}
           transition={{ type: 'spring', damping: 25 }}
           onClick={(e) => e.stopPropagation()}
-          className="bg-card rounded-2xl overflow-hidden max-w-lg w-full shadow-2xl"
+          className="bg-card rounded-2xl overflow-hidden max-w-lg w-full shadow-2xl max-h-[90vh] overflow-y-auto"
         >
           <div className="relative">
             <img src={painting.image} alt={painting.title} className="w-full aspect-square object-cover" />
@@ -36,18 +37,43 @@ const PaintingModal = ({ painting, onClose }: Props) => (
           <div className="p-6">
             <h3 className="font-display text-2xl font-bold text-foreground">{painting.title}</h3>
             <p className="text-muted-foreground font-body mt-2">{painting.description}</p>
-            <div className="flex items-center gap-3 mt-4">
-              <span className="text-muted-foreground line-through">₹{painting.originalPrice}</span>
-              <span className="text-primary font-bold text-xl">₹{painting.discountPrice}</span>
+
+            <h4 className="font-display text-base font-semibold text-foreground mt-6 mb-3">
+              Available Services & Pricing
+            </h4>
+            <div className="space-y-2">
+              {serviceOptionsFor(painting).map((s) => (
+                <a
+                  key={s.title}
+                  href={`https://wa.me/917708704523?text=${encodeURIComponent(
+                    `Hi, I want to order "${painting.title}" as ${s.title} (${s.price}). Please confirm.`
+                  )}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-start gap-3 p-3 rounded-lg border border-border hover:border-primary transition-colors duration-300 group"
+                >
+                  <i className={`fas ${s.icon} text-primary mt-0.5`} />
+                  <span className="flex-1">
+                    <span className="block font-body text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                      {s.title}
+                    </span>
+                    <span className="block text-muted-foreground text-xs mt-0.5">{s.note}</span>
+                  </span>
+                  <span className="text-primary font-bold text-sm whitespace-nowrap">{s.price}</span>
+                </a>
+              ))}
             </div>
-            <div className="flex gap-3 mt-5">
+
+            <div className="flex gap-3 mt-6">
               <a
-                href={`https://wa.me/917708704523?text=Hi, I want to buy "${painting.title}" for ₹${painting.discountPrice}`}
+                href={`https://wa.me/917708704523?text=${encodeURIComponent(
+                  `Hi, I am interested in "${painting.title}". Please help me choose a service.`
+                )}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-glow flex-1 bg-primary text-primary-foreground py-3 rounded-lg font-body font-semibold text-sm text-center"
               >
-                <i className="fas fa-shopping-cart mr-2" />Buy Now
+                <i className="fab fa-whatsapp mr-2" />Order on WhatsApp
               </a>
               <a
                 href="#contact"
