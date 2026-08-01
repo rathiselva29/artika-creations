@@ -61,27 +61,24 @@ const GallerySection = () => {
               <div className="p-3 md:p-4">
                 <h3 className="font-display text-sm md:text-base font-semibold text-foreground truncate">{p.title}</h3>
                 <p className="text-muted-foreground text-xs mt-1 line-clamp-2">{p.description}</p>
-                <div className="flex items-center gap-2 mt-2">
-                  <span className="text-muted-foreground line-through text-xs">₹{p.originalPrice}</span>
-                  <span className="text-primary font-bold text-sm">₹{p.discountPrice}</span>
-                </div>
                 <div className="flex gap-2 mt-3">
                   <button
                     onClick={() => setSelected(p)}
                     className="btn-glow flex-1 text-xs bg-primary text-primary-foreground py-1.5 rounded-md font-body font-medium"
                   >
-                    View
+                    View Services
                   </button>
                   <a
-                    href={`https://wa.me/917708704523?text=Hi, I want to buy "${p.title}" for ₹${p.discountPrice}`}
+                    href={`https://wa.me/917708704523?text=Hi, I am interested in "${p.title}". Please share the service options and pricing.`}
                     target="_blank"
                     rel="noreferrer"
                     className="btn-glow flex-1 text-xs border border-primary text-primary py-1.5 rounded-md font-body font-medium text-center"
                   >
-                    Buy Now
+                    Enquire
                   </a>
                 </div>
               </div>
+
             </motion.div>
           ))}
         </div>
