@@ -52,6 +52,12 @@ import p51 from '@/assets/paintings/painting-51.jpg';
 import p52 from '@/assets/paintings/painting-52.jpg';
 import p53 from '@/assets/paintings/painting-53.jpg';
 import p54 from '@/assets/paintings/painting-54.jpg';
+import p55 from '@/assets/paintings/painting-55.jpg';
+import p56 from '@/assets/paintings/painting-56.jpg';
+import p57 from '@/assets/paintings/painting-57.jpg';
+import p58 from '@/assets/paintings/painting-58.jpg';
+import p59 from '@/assets/paintings/painting-59.jpg';
+import p60 from '@/assets/paintings/painting-60.jpg';
 
 export type Category = 'Nature' | 'Comic' | 'Portrait' | 'Poster' | 'Unique';
 
@@ -91,6 +97,7 @@ export const paintings: Painting[] = [
   { id: 39, title: "Hiccup & Toothless — Soul Bond", description: "A heartfelt moment between Hiccup and Toothless glowing in warm yellow light.", originalPrice: 329, discountPrice: 99, image: p39, category: 'Comic' },
   { id: 40, title: "Curious Little Toothless", description: "A playful baby Toothless peeks out with bright green eyes and a tiny floating heart.", originalPrice: 259, discountPrice: 99, image: p40, category: 'Comic' },
   { id: 42, title: "Judy & Nick — Zootopia Duo", description: "The iconic Zootopia partners painted with bold colors and lively, playful expressions.", originalPrice: 309, discountPrice: 99, image: p42, category: 'Comic' },
+  { id: 60, title: "Carl & Ellie — Forever Up", description: "A sweet grey-haired couple sharing a happy kiss, celebrating a lifetime of adventure.", originalPrice: 319, discountPrice: 99, image: p60, category: 'Comic' },
 
   // ============ PORTRAIT ============
   { id: 8, title: "Krishna's Soft Melody", description: "A dreamy watercolor of Lord Krishna playing the flute amid swirling pastel waves.", originalPrice: 329, discountPrice: 99, image: p8, category: 'Portrait' },
@@ -100,6 +107,8 @@ export const paintings: Painting[] = [
   { id: 41, title: "Blushing Sweethearts", description: "A charming couple portrait full of warmth, soft blushes and tender first-love magic.", originalPrice: 289, discountPrice: 99, image: p41, category: 'Portrait' },
   { id: 43, title: "Prom Night Sweethearts", description: "An elegant tuxedo and red-dress couple captured in a timeless cinematic moment.", originalPrice: 319, discountPrice: 99, image: p43, category: 'Portrait' },
   { id: 47, title: "Hands of Krishna", description: "Delicate hands holding a bamboo flute crowned by a vibrant peacock feather.", originalPrice: 349, discountPrice: 99, image: p47, category: 'Portrait' },
+  { id: 58, title: "Crimson Blade Heroine", description: "A confident anime heroine in a red turtleneck and black harness, painted on lined paper.", originalPrice: 299, discountPrice: 99, image: p58, category: 'Portrait' },
+  { id: 59, title: "Golden Hair Wanderer", description: "A soulful blond anime hero in a navy jacket, softly lit with two little red hearts.", originalPrice: 299, discountPrice: 99, image: p59, category: 'Portrait' },
 
   // ============ POSTER ============
   { id: 6, title: "Lakeside Walk in the Rain", description: "A couple walks under a red umbrella along a tree-lined lake on a soft rainy day.", originalPrice: 289, discountPrice: 99, image: p6, category: 'Poster' },
@@ -131,4 +140,7 @@ export const paintings: Painting[] = [
   { id: 52, title: "Dragon of the Stormcastle", description: "A fierce dragon breathes fire across a moonlit castle wrapped in lightning and mist.", originalPrice: 349, discountPrice: 99, image: p52, category: 'Unique' },
   { id: 48, title: "Voyage of the Pirate Ship", description: "A grand pirate ship sails through wild stormy seas under a moody dramatic sky.", originalPrice: 339, discountPrice: 99, image: p48, category: 'Unique' },
   { id: 49, title: "Cutting Chai Comfort", description: "A steaming glass of hot Indian chai painted with cozy detail on lined paper.", originalPrice: 209, discountPrice: 89, image: p49, category: 'Unique' },
+  { id: 55, title: "Roar — Ink Leopard", description: "A bold black-ink leopard mid-roar, every spot and whisker drawn with fearless strokes.", originalPrice: 349, discountPrice: 99, image: p55, category: 'Unique' },
+  { id: 56, title: "Temple Kolam Wall Art", description: "A hand-painted maroon kolam rising like a temple tower across a warm yellow wall.", originalPrice: 359, discountPrice: 99, image: p56, category: 'Unique' },
+  { id: 57, title: "Corner Kolam Blessings", description: "A traditional dotted kolam flowing down a corner wall with small floral motifs.", originalPrice: 329, discountPrice: 99, image: p57, category: 'Unique' },
 ];
