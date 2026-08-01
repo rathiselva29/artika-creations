@@ -97,6 +97,7 @@ export const paintings: Painting[] = [
   { id: 39, title: "Hiccup & Toothless — Soul Bond", description: "A heartfelt moment between Hiccup and Toothless glowing in warm yellow light.", originalPrice: 329, discountPrice: 99, image: p39, category: 'Comic' },
   { id: 40, title: "Curious Little Toothless", description: "A playful baby Toothless peeks out with bright green eyes and a tiny floating heart.", originalPrice: 259, discountPrice: 99, image: p40, category: 'Comic' },
   { id: 42, title: "Judy & Nick — Zootopia Duo", description: "The iconic Zootopia partners painted with bold colors and lively, playful expressions.", originalPrice: 309, discountPrice: 99, image: p42, category: 'Comic' },
+  { id: 60, title: "Carl & Ellie — Forever Up", description: "A sweet grey-haired couple sharing a happy kiss, celebrating a lifetime of adventure.", originalPrice: 319, discountPrice: 99, image: p60, category: 'Comic' },
 
   // ============ PORTRAIT ============
   { id: 8, title: "Krishna's Soft Melody", description: "A dreamy watercolor of Lord Krishna playing the flute amid swirling pastel waves.", originalPrice: 329, discountPrice: 99, image: p8, category: 'Portrait' },
