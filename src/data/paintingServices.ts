@@ -104,3 +104,40 @@ export const serviceOptionsFor = (p: Painting): ServiceOption[] => [
   ...categoryOptions(p),
   ...specialOptions(p),
 ];
+
+/* ---------------- Configurator (size + format + notes) ---------------- */
+
+export interface ConfigOption {
+  id: string;
+  label: string;
+  note: string;
+  delta: number | null; // null = on quotation
+}
+
+export const sizeChoices: ConfigOption[] = [
+  { id: 'a5', label: 'A5', note: '148 × 210 mm', delta: 0 },
+  { id: 'a4', label: 'A4', note: '210 × 297 mm', delta: 150 },
+  { id: 'a3', label: 'A3', note: '297 × 420 mm', delta: 400 },
+  { id: 'custom', label: 'Custom Size', note: 'Your dimensions', delta: null },
+];
+
+export const formatChoicesFor = (p: Painting): ConfigOption[] => {
+  const list: ConfigOption[] = [
+    { id: 'paper', label: 'Hand-Painted on Paper', note: 'Original artwork, unframed', delta: 0 },
+    { id: 'framed', label: 'Framed Painting', note: 'Black, white, wooden or premium', delta: 350 },
+    { id: 'canvas', label: 'Canvas Painting', note: 'Gallery-style canvas finish', delta: 500 },
+  ];
+  if (p.category === 'Comic' || p.category === 'Unique') {
+    list.push({ id: 'sticker', label: 'Wall Sticker / Decal', note: 'Peel-and-stick decor version', delta: 100 });
+  }
+  if (p.category === 'Nature' || p.category === 'Unique') {
+    list.push({ id: 'mural', label: 'Wall Mural', note: 'Painted directly on your wall', delta: null });
+  }
+  if (p.category === 'Poster') {
+    list.push({ id: 'poster', label: 'Poster Print', note: 'Print-ready poster finish', delta: 150 });
+    list.push({ id: 'digital', label: 'Digital File Only', note: 'High-resolution download', delta: -50 });
+  }
+  return list;
+};
+
+export const basePriceOf = (p: Painting) => base(p);
