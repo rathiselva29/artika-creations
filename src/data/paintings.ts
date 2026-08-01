@@ -52,6 +52,12 @@ import p51 from '@/assets/paintings/painting-51.jpg';
 import p52 from '@/assets/paintings/painting-52.jpg';
 import p53 from '@/assets/paintings/painting-53.jpg';
 import p54 from '@/assets/paintings/painting-54.jpg';
+import p55 from '@/assets/paintings/painting-55.jpg';
+import p56 from '@/assets/paintings/painting-56.jpg';
+import p57 from '@/assets/paintings/painting-57.jpg';
+import p58 from '@/assets/paintings/painting-58.jpg';
+import p59 from '@/assets/paintings/painting-59.jpg';
+import p60 from '@/assets/paintings/painting-60.jpg';
 
 export type Category = 'Nature' | 'Comic' | 'Portrait' | 'Poster' | 'Unique';
 
