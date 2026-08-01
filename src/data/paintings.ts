@@ -137,4 +137,7 @@ export const paintings: Painting[] = [
   { id: 52, title: "Dragon of the Stormcastle", description: "A fierce dragon breathes fire across a moonlit castle wrapped in lightning and mist.", originalPrice: 349, discountPrice: 99, image: p52, category: 'Unique' },
   { id: 48, title: "Voyage of the Pirate Ship", description: "A grand pirate ship sails through wild stormy seas under a moody dramatic sky.", originalPrice: 339, discountPrice: 99, image: p48, category: 'Unique' },
   { id: 49, title: "Cutting Chai Comfort", description: "A steaming glass of hot Indian chai painted with cozy detail on lined paper.", originalPrice: 209, discountPrice: 89, image: p49, category: 'Unique' },
+  { id: 55, title: "Roar — Ink Leopard", description: "A bold black-ink leopard mid-roar, every spot and whisker drawn with fearless strokes.", originalPrice: 349, discountPrice: 99, image: p55, category: 'Unique' },
+  { id: 56, title: "Temple Kolam Wall Art", description: "A hand-painted maroon kolam rising like a temple tower across a warm yellow wall.", originalPrice: 359, discountPrice: 99, image: p56, category: 'Unique' },
+  { id: 57, title: "Corner Kolam Blessings", description: "A traditional dotted kolam flowing down a corner wall with small floral motifs.", originalPrice: 329, discountPrice: 99, image: p57, category: 'Unique' },
 ];
