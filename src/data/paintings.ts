@@ -106,6 +106,8 @@ export const paintings: Painting[] = [
   { id: 41, title: "Blushing Sweethearts", description: "A charming couple portrait full of warmth, soft blushes and tender first-love magic.", originalPrice: 289, discountPrice: 99, image: p41, category: 'Portrait' },
   { id: 43, title: "Prom Night Sweethearts", description: "An elegant tuxedo and red-dress couple captured in a timeless cinematic moment.", originalPrice: 319, discountPrice: 99, image: p43, category: 'Portrait' },
   { id: 47, title: "Hands of Krishna", description: "Delicate hands holding a bamboo flute crowned by a vibrant peacock feather.", originalPrice: 349, discountPrice: 99, image: p47, category: 'Portrait' },
+  { id: 58, title: "Crimson Blade Heroine", description: "A confident anime heroine in a red turtleneck and black harness, painted on lined paper.", originalPrice: 299, discountPrice: 99, image: p58, category: 'Portrait' },
+  { id: 59, title: "Golden Hair Wanderer", description: "A soulful blond anime hero in a navy jacket, softly lit with two little red hearts.", originalPrice: 299, discountPrice: 99, image: p59, category: 'Portrait' },
 
   // ============ POSTER ============
   { id: 6, title: "Lakeside Walk in the Rain", description: "A couple walks under a red umbrella along a tree-lined lake on a soft rainy day.", originalPrice: 289, discountPrice: 99, image: p6, category: 'Poster' },
